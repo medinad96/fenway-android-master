@@ -37,7 +37,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void toMap(){
-        Intent intent = new Intent(this, GardenMap.class);
+        /*Intent intent = new Intent(this, GardenMap.class);
+        startActivity(intent);*/
+        Intent intent = new Intent(this, ImageMapTestActivity.class);
         startActivity(intent);
     }
 

@@ -27,6 +27,8 @@
             android:name=".Calender"
             android:label="@string/title_activity_calender"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".ImageMapTestActivity"
+            android:label="ImageMapTestActivity"/>
     </application>
 
 </manifest>
