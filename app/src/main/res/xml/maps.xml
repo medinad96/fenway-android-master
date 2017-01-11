@@ -116,4 +116,15 @@
 
     </map>
 
+    <map name="fenwaygarden">
+        <area name="Accessible Garden"  id="@+id/area90" shape="poly" coords="653,662,685,625,704,639,675,676" />
+        <area name="Teaching Apiary"  id="@+id/area91" shape="poly" coords="747,846,734,896,762,898,769,857,773,851" />
+        <area name="Teaching Garden"  id="@+id/area92" shape="poly" coords="857,870,845,921,875,921,885,872" />
+        <area name="Herb Garden"  id="@+id/area93" shape="poly" coords="263,1077,254,1124,278,1133,290,1084" />
+        <area name="Wheelbarrow Yard"  id="@+id/area94" shape="poly" coords="409,1324,403,1372,427,1373,436,1329" />
+        <area name="Community Nursery"  id="@+id/area95" shape="rect" coords="733,1264,796,1234" />
+        <area name="Northeastern Garden"  id="@+id/area96" shape="poly" coords="715,1332,750,1336,756,1287,729,1284" />
+
+    </map>
+
 </maps>

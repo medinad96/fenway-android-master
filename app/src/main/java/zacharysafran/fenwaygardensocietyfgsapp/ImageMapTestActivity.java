@@ -22,7 +22,8 @@ import android.app.Activity;
 import android.media.Image;
 
 import android.os.Bundle;
-
+import android.widget.Gallery;
+import android.widget.LinearLayout;
 
 
 public class ImageMapTestActivity extends Activity{
@@ -46,7 +47,8 @@ public class ImageMapTestActivity extends Activity{
 
             mImageMap = (ImageMap)findViewById(R.id.map);
 
-            mImageMap.setImageResource(R.drawable.usamap);
+            mImageMap.setImageResource(R.drawable.fenway_mapimageview);
+
 
 
 

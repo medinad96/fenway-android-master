@@ -1,5 +1,8 @@
 package zacharysafran.fenwaygardensocietyfgsapp;
 
+import android.support.design.widget.Snackbar;
+import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 import android.content.Context;
 
@@ -39,6 +42,7 @@ import android.view.ViewConfiguration;
 
 
 import android.widget.Scroller;
+import android.widget.Toast;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -85,7 +89,7 @@ public class ImageMap extends ImageView {
 
     // by default, this is true
 
-    private boolean mFitImageToScreen=true;
+    private boolean mFitImageToScreen=false;
 
 
 
@@ -105,7 +109,7 @@ public class ImageMap extends ImageView {
 
     // by default, this is false
 
-    private boolean mScaleFromOriginal=false;
+    private boolean mScaleFromOriginal=true;
 
 
 
@@ -818,6 +822,8 @@ public class ImageMap extends ImageView {
 
         densityFactor = getResources().getDisplayMetrics().density;
 
+
+
     }
 
 
@@ -877,6 +883,7 @@ public class ImageMap extends ImageView {
         mAspect = (float)mImageWidth / mImageHeight;
 
         setInitialImageBounds();
+
 
     }
 
@@ -1236,14 +1243,14 @@ public class ImageMap extends ImageView {
 
                     }
 
-                    mMaxWidth = (int)(mMinWidth * 1.5f);
+                    mMaxWidth = (int)(mMinWidth * 2.0f);
 
-                    mMaxHeight = (int)(mMinHeight * 1.5f);
+                    mMaxHeight = (int)(mMinHeight * 2.0f);
 
                 }
 
 
-
+                /*
                 if (newWidth < mMinWidth) {
 
                     newWidth = mMinWidth;
@@ -1263,7 +1270,7 @@ public class ImageMap extends ImageView {
                     resize = true;
 
                 }
-
+                  */
 
 
                 mScrollTop = 0;
@@ -1274,7 +1281,7 @@ public class ImageMap extends ImageView {
 
                 // scale the bitmap
 
-                if (resize) {
+                if (true) {
 
                     scaleBitmap(newWidth, newHeight);
 
@@ -1303,6 +1310,7 @@ public class ImageMap extends ImageView {
     }
 
 
+    //}
 
     /**
 
@@ -1434,6 +1442,7 @@ public class ImageMap extends ImageView {
         // fix up the image
 
         setInitialImageBounds();
+        resizeBitmap(-3000);
 
     }
 
@@ -2151,7 +2160,7 @@ public class ImageMap extends ImageView {
 
 	 */
 
-    void processZoom() {
+   public void processZoom() {
 
         if (mZoomPending) {
 
@@ -2178,6 +2187,8 @@ public class ImageMap extends ImageView {
                     mLastDistanceChange=distanceChange;
 
                     resizeBitmap(delta);
+
+                    Log.d("hi", Integer.toString(delta));
 
                     invalidate();
 
