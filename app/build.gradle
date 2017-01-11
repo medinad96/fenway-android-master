@@ -16,11 +16,6 @@ android {
     }
 
 
-    configurations {
-        all*.exclude group: 'com.android.support.v4.graphics'
-       // all*.exclude group: 'com.android.support', module: 'support-annotations'
-
-    }
 
     buildTypes {
         release {

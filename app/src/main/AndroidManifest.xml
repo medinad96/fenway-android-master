@@ -22,6 +22,10 @@
         <activity
             android:name=".GardenMap"
             android:label="@string/title_activity_garden_map"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Calender"
+            android:label="@string/title_activity_calender"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
