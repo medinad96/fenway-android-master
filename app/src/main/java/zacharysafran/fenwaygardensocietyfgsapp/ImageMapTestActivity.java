@@ -19,11 +19,15 @@ package zacharysafran.fenwaygardensocietyfgsapp;
 
 import android.app.Activity;
 
+import android.content.Intent;
 import android.media.Image;
 
 import android.os.Bundle;
+import android.support.design.widget.Snackbar;
+import android.view.View;
 import android.widget.Gallery;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 
 public class ImageMapTestActivity extends Activity{
@@ -31,7 +35,13 @@ public class ImageMapTestActivity extends Activity{
 
         ImageMap mImageMap;
 
-
+    public void tomapToast(int theid){
+        /*Intent intent = new Intent(this, GardenMap.class);
+        startActivity(intent);*/
+        /*Intent intent = new Intent(this, Calender.class);
+        startActivity(intent);*/
+        Toast.makeText(getApplicationContext(),Integer.toString(theid),Toast.LENGTH_SHORT).show();
+    }
 
         @Override
 
@@ -51,27 +61,25 @@ public class ImageMapTestActivity extends Activity{
 
 
 
-
             // add a click handler to react when areas are tapped
 
             mImageMap.addOnImageMapClickedHandler(new ImageMap.OnImageMapClickedHandler()
 
             {
 
+
                 @Override
 
                 public void onImageMapClicked(int id, ImageMap imageMap)
 
                 {
-
                     // when the area is tapped, show the name in a
-
                     // text bubble
+                    //mImageMap.showBubble(id)
+                    tomapToast(id);
 
-                    mImageMap.showBubble(id);
 
                 }
-
 
 
                 @Override

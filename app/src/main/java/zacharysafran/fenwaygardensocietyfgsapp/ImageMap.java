@@ -723,9 +723,9 @@ public class ImageMap extends ImageView {
 
             float y = a.getOriginY()*mResizeFactorY;
 
-            int left = (int)((mViewWidth/2)-x);
+            int left = (int)((mImageWidth/2)-x);
 
-            int top  = (int)((mViewHeight/2)-y);
+            int top  = (int)((mImageHeight/2)-y);
 
             moveTo(left,top);
 
@@ -735,7 +735,6 @@ public class ImageMap extends ImageView {
     public void centerAndShowArea(String text, int areaId)
 
     {
-
         centerArea(areaId);
 
         showBubble(text,areaId);
@@ -2188,7 +2187,7 @@ public class ImageMap extends ImageView {
 
                     resizeBitmap(delta);
 
-                    Log.d("hi", Integer.toString(delta));
+                    //Log.d("hi", Integer.toString(delta));
 
                     invalidate();
 
