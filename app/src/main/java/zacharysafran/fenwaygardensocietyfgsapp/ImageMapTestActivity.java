@@ -19,6 +19,10 @@ package zacharysafran.fenwaygardensocietyfgsapp;
 
 import android.app.Activity;
 
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.media.Image;
 
@@ -35,12 +39,36 @@ public class ImageMapTestActivity extends Activity{
 
         ImageMap mImageMap;
 
+
+
+
     public void tomapToast(int theid){
         /*Intent intent = new Intent(this, GardenMap.class);
         startActivity(intent);*/
         /*Intent intent = new Intent(this, Calender.class);
         startActivity(intent);*/
-        Toast.makeText(getApplicationContext(),Integer.toString(theid),Toast.LENGTH_SHORT).show();
+
+
+       Toast.makeText(getApplicationContext(),Integer.toString(theid),Toast.LENGTH_SHORT).show();
+
+
+        if (theid == 2131558587) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            // Set the dialog title
+            builder.setTitle(R.string.Accessible_Garden);
+            builder.setMessage(R.string.infoAccessible_Garden);
+            builder.setNegativeButton(R.string.close, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.cancel();
+                }
+            });
+           AlertDialog dialog = builder.create();
+            dialog.show();
+
+        }
+
+
     }
 
         @Override
@@ -96,5 +124,6 @@ public class ImageMapTestActivity extends Activity{
 
         }
 
-    }
+
+}
 

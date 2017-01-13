@@ -4,4 +4,7 @@
     <string name="title_activity_garden_map">GardenMap</string>
     <string name="welcome">Welcome to the Fenway Graden Society App</string>
     <string name="title_activity_calender">Calender</string>
+    <string name="Accessible_Garden">Accessible Garden</string>
+    <string name="infoAccessible_Garden">This is the Accessible Garden!</string>
+    <string name="close">Close</string>
 </resources>
