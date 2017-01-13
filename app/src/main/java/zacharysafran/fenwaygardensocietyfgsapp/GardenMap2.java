@@ -20,21 +20,13 @@ package zacharysafran.fenwaygardensocietyfgsapp;
 import android.app.Activity;
 
 import android.app.AlertDialog;
-import android.app.Dialog;
-import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
-import android.media.Image;
 
 import android.os.Bundle;
-import android.support.design.widget.Snackbar;
-import android.view.View;
-import android.widget.Gallery;
-import android.widget.LinearLayout;
 import android.widget.Toast;
 
 
-public class ImageMapTestActivity extends Activity{
+public class GardenMap2 extends Activity{
 
 
         ImageMap mImageMap;
@@ -77,7 +69,7 @@ public class ImageMapTestActivity extends Activity{
 
             super.onCreate(savedInstanceState);
 
-            setContentView(R.layout.main);
+            setContentView(R.layout.activity_graden2);
 
 
 

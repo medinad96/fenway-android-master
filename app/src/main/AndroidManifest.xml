@@ -20,14 +20,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".GardenMap"
-            android:label="@string/title_activity_garden_map"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".Calender"
             android:label="@string/title_activity_calender"
             android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".ImageMapTestActivity"
+        <activity android:name=".GardenMap2"
             android:label="ImageMapTestActivity"/>
     </application>
 

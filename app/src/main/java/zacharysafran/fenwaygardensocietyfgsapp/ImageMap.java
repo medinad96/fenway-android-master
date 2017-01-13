@@ -2037,7 +2037,7 @@ public class ImageMap extends ImageView {
 
 	/*
 
-	 * find a touch pointer that is not being used as main or pinch
+	 * find a touch pointer that is not being used as activity_graden2 or pinch
 
 	 */
 
