@@ -77,7 +77,7 @@ public class GardenMap2 extends Activity{
 
             mImageMap = (ImageMap)findViewById(R.id.map);
 
-            mImageMap.setImageResource(R.drawable.fenway_mapimageview);
+            mImageMap.setImageResource(R.drawable.fenway_mapimageviewlabel1);
 
 
 
