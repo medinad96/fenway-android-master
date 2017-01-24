@@ -77,6 +77,26 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         startActivity(intent);
     }
 
+    public  void toCalendar() {
+        Intent intent = new Intent(this, Calendar.class);
+        startActivity(intent);
+    }
+
+    public  void toMemResources() {
+        Intent intent = new Intent(this, MemberResources.class);
+        startActivity(intent);
+    }
+
+    public  void toAboutUs() {
+        Intent intent = new Intent(this, AboutUs.class);
+        startActivity(intent);
+    }
+
+    public  void toDonate() {
+        Intent intent = new Intent(this, Donate.class);
+        startActivity(intent);
+    }
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle action bar item clicks here. The action bar will
@@ -105,6 +125,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             toMap();
         }
 
+        if (id == R.id.go_calendar) {
+            toCalendar();
+        }
+
+        if (id == R.id.go_resources) {
+            toMemResources();
+        }
+
+        if (id == R.id.go_about) {
+            toAboutUs();
+        }
+
+        if (id == R.id.go_donate) {
+            toDonate();
+        }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;

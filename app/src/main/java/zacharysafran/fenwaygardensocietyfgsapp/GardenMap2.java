@@ -37,14 +37,14 @@ public class GardenMap2 extends Activity{
     public void tomapToast(int theid){
         /*Intent intent = new Intent(this, GardenMap.class);
         startActivity(intent);*/
-        /*Intent intent = new Intent(this, Calender.class);
+        /*Intent intent = new Intent(this, Calendar.class);
         startActivity(intent);*/
 
 
        Toast.makeText(getApplicationContext(),Integer.toString(theid),Toast.LENGTH_SHORT).show();
 
 
-        if (theid == 2131558587) {
+        if (theid == 2131558592) {
             AlertDialog.Builder builder = new AlertDialog.Builder(this);
             // Set the dialog title
             builder.setTitle(R.string.Accessible_Garden);
@@ -55,12 +55,38 @@ public class GardenMap2 extends Activity{
                     dialog.cancel();
                 }
             });
-           AlertDialog dialog = builder.create();
+            AlertDialog dialog = builder.create();
             dialog.show();
 
         }
-
-
+         else if (theid == 2131558593) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            // Set the dialog title
+            builder.setTitle(R.string.Teaching_Apiary);
+            builder.setMessage(R.string.infoTeaching_Apiary);
+            builder.setNegativeButton(R.string.close, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.cancel();
+                }
+            });
+            AlertDialog dialog = builder.create();
+            dialog.show();
+        }
+        if (theid == 2131558594) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+            // Set the dialog title
+            builder.setTitle(R.string.Teaching_Garden);
+            builder.setMessage(R.string.infoTeaching_Garden);
+            builder.setNegativeButton(R.string.close, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.cancel();
+                }
+            });
+            AlertDialog dialog = builder.create();
+            dialog.show();
+        }
     }
 
         @Override

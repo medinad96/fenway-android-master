@@ -11,6 +11,13 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="Teaching_Apiary">Teaching Apiary</string>
+    <string name="infoTeaching_Apiary">This is the Teaching Apiary!</string>
+    <string name="Teaching_Garden">Teaching Garden</string>
+    <string name="infoTeaching_Garden">This is the Teaching Garden!</string>
+    <string name="title_activity_member_resources">MemberResources</string>
+    <string name="title_activity_about_us">AboutUs</string>
+    <string name="title_activity_donate">Donate</string>
 
 </resources>
 
