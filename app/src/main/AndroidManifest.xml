@@ -3,6 +3,7 @@
     package="zacharysafran.fenwaygardensocietyfgsapp">
 
     <application
+        android:name="android.support.multidex.MultiDexApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -19,8 +20,23 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".GardenMap"
-            android:label="@string/title_activity_garden_map"
+            android:name=".Calendar"
+            android:label="@string/title_activity_calender"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GardenMap2"
+            android:label="ImageMapTestActivity" />
+        <activity
+            android:name=".MemberResources"
+            android:label="@string/title_activity_member_resources"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AboutUs"
+            android:label="@string/title_activity_about_us"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Donate"
+            android:label="@string/title_activity_donate"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
